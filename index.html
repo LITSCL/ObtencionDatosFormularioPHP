@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario</title>
+</head>
+<body>
+	<form action="Procesar.php" method="GET">
+	
+		<label for="nombre">Nombre:</label>
+		<input type="text" name="nombre"><br>
+		 
+		<input type="radio" name="boton" value="1">Uno<br>
+		<input type="radio" name="boton" value="2">Dos<br>
+		<input type="radio" name="boton" value="3">Tres<br>
+		 
+		<label for="pais">Seleccionar:</label>
+		<select name="pais">
+			<option value="CH">Chile</option>
+			<option value="PE">Peru</option>
+			<option value="BO">Bolivia</option>
+			<option value="BO">Paraguay</option>
+			<option value="BO">Ecuador</option>
+		</select>
+		 
+		<br>
+		<br>
+		<label for="paises[]">Seleccionar:</label>
+		<select name="paises[]" multiple="multiple" required>
+			<option value="CH">Chile</option>
+			<option value="PE">Peru</option>
+			<option value="BO">Bolivia</option>
+			<option value="PA">Paraguay</option>
+			<option value="EC">Ecuador</option>
+		</select>
+		 
+		<br>
+		<input type="checkbox" name="santiago" value="Santiago">
+		<label for="santiago">Santiago</label><br>
+		<input type="checkbox" name="lima" value="Lima">
+		<label for="lima">Lima</label><br>
+		<input type="checkbox" name="laPaz" value="La Paz">
+		<label for="laPaz">La Paz</label><br>
+		
+		<p>
+			<input type="submit" value="Enviar">
+		</p>
+	
+	</form>
+</body>
+</html>
